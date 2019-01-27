@@ -1,0 +1,189 @@
+.overlay
+  width: 0%
+  height: 100vh
+  background: #0F2B40
+  position: fixed
+  z-index: 10
+  top: 0
+  left: 0
+  -webkit-transition: all 0.3s ease
+  transition: all 0.3s ease
+  &.open
+    width: 100%
+  @media(min-width: 1024px)
+    width: 220px
+  @media(min-width: 1200px)
+    width: 300px
+
+
+.overlayContent
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  text-align: center
+  width: 100%
+  height: 100vh
+
+.overlay a
+  font-family: 'Open Sans'
+  font-size: 22px
+  padding: 20px
+  color: #0F2B40
+  display: block
+  width: 100%
+  opacity: 0
+  text-decoration: none
+  display: block
+  -webkit-transition: color 0.3s ease 0.3s
+  transition: color 0.3s ease 0.3s
+  &.open
+    color: white
+    opacity: 1
+  @media(min-width: 1024px)
+    color: white
+    opacity: 1
+    &:hover
+      background: #0f3551
+
+#nav-icon
+  width: 60px
+  height: 45px
+  position: absolute
+  z-index: 11
+  top: 20px
+  right: 20px
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg) scale(0.4)
+  -webkit-transition: .5s ease-in-out
+  -moz-transition: .5s ease-in-out
+  -o-transition: .5s ease-in-out
+  transition: .5s ease-in-out
+  cursor: pointer
+  span
+    display: block
+    position: absolute
+    height: 9px
+    width: 100%
+    background: #0F2B40
+    border-radius: 9px
+    opacity: 1
+    left: 0
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+    -webkit-transition: .25s ease-in-out
+    -moz-transition: .25s ease-in-out
+    -o-transition: .25s ease-in-out
+    transition: .25s ease-in-out
+    &:nth-child(1)
+      top: 0px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+    &:nth-child(2)
+      top: 18px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+    &:nth-child(3)
+      top: 36px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+  @media(min-width: 1024px)
+    display: none
+    opacity: 0
+  &.open span
+    &:nth-child(1)
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+      top: -3px
+      left: 8px
+      background: white
+    &:nth-child(2)
+      width: 0%
+      opacity: 0
+      background: white
+    &:nth-child(3)
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      top: 39px
+      left: 8px
+      background: white
+
+.wrapper
+  background: url("../img/heroImage.jpeg")
+  margin: 0 auto
+  background-size: cover
+  display: flex
+  height: 100vh
+  width: 100%
+  position: relative
+  animation: backgroundImg 20s infinite
+  &::before
+    position: absolute
+    content: ""
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(255,255,255,.5)
+
+.hero
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 50%
+  left: 50%
+  text-align: center
+  transform: translate(-50%, -50%)
+  border: 1px solid rgba(0,0,0,.3)
+  padding: 10px 30px
+  h1
+    letter-spacing: 3px
+    font-weight: 400
+  p
+    font-size: 20px
+    font-weight: 400
+    max-width: 800px
+  &::before
+    position: absolute
+    content: ""
+    background: rgba(255,255,255,.4)
+    top: 30px
+    left: 30px
+    width: 100%
+    height: 100%
+
+
+
+.kubus
+  text-transform: uppercase
+  background: #dff9fb
+  padding: 0px 12px
+  font-weight: 800
+
+@keyframes backgroundImg
+  25%
+    background: url("../img/heroImage4.jpg")
+    background-size: cover
+  50%
+    background: url("../img/heroImage2.jpg")
+    background-size: cover
+  75%
+    background: url("../img/heroImage3.jpg")
+    background-size: cover
+  90%
+    background: url("../img/heroImage.jpeg")
+    background-size: cover
