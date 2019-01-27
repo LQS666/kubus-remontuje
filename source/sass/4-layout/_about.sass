@@ -1,0 +1,49 @@
+#about
+  .about-wrapper
+    display: flex
+    width: 100%
+    margin: 60px auto 100px
+    padding: 0
+    flex-direction: column
+    z-index: -1
+    overflow: hidden
+    &:hover > .about-photo
+      transform: scale(1.05) rotateZ(2deg)
+    @media (min-width: 1024px)
+      margin-left: 320px
+      flex-direction: row
+      max-width: 70%
+      width: 100%
+    @media (min-width: 1800px)
+      max-width: 80%
+    .about-photo
+      margin: 50px auto 20px
+      vertical-align: middle
+      max-width: 500px
+      height: 66vw
+      width: 100%
+      background: url("../img/about.jpeg")
+      background-size: cover
+      border: 1px solid rgba(0,0,0,.3)
+      transition: .5s ease-in-out
+      @media (min-width: 568px)
+        height: 20rem
+      @media (min-width: 1024px)
+        flex-grow: 1
+        border: none
+    .about-desc
+      background: $backgroundColor
+      width: 100%
+      text-align: center
+      font-family: "Open Sans", sans-serif
+      font-weight: 400
+      padding: 20px 50px
+      @media (min-width: 1024px)
+        flex-grow: 3
+        padding: 20px
+        margin: 10px 0px 0px
+      h2
+        font-weight: 300
+      p
+        font-size: 17px
+        font-weight: 300
