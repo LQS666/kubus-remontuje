@@ -466,7 +466,7 @@ hr {
   flex-direction: column;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52%;
   text-align: center;
   transform: translate(-50%, -50%);
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -481,7 +481,7 @@ hr {
   .hero::before {
     position: absolute;
     content: "";
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.6);
     top: 30px;
     left: 30px;
     width: 100%;
@@ -559,4 +559,134 @@ hr {
       font-weight: 300; }
     #about .about-wrapper .about-desc p {
       font-size: 17px;
+      line-height: 30px;
+      text-align: justify;
       font-weight: 300; }
+
+#services {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-top: 1px solid #ddd; }
+  @media (min-width: 1024px) {
+    #services {
+      margin-left: 230px; } }
+  @media (min-width: 1200px) {
+    #services {
+      margin-left: 320px; } }
+  #services .services-wrapper {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    display: flex;
+    flex-direction: column; }
+    #services .services-wrapper h2 {
+      font-size: 50px;
+      font-weight: 300;
+      margin: 55px 0;
+      display: inline-block;
+      text-transform: uppercase;
+      margin: 0 auto; }
+    #services .services-wrapper p {
+      font-size: 15px;
+      line-height: 30px; }
+
+.services-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(1, auto); }
+  .services-box .one {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  .services-box .two {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  .services-box .three {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  .services-box .four {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  .services-box .five {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  .services-box .six {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1; }
+  @media (min-width: 768px) {
+    .services-box {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, auto); }
+      .services-box .one {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1; }
+      .services-box .two {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1; }
+      .services-box .three {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2; }
+      .services-box .four {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2; }
+      .services-box .five {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3; }
+      .services-box .six {
+        -ms-grid-column: 2;
+        -ms-grid-row: 3; } }
+  @media (min-width: 1400px) {
+    .services-box {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: repeat(3, auto); }
+      .services-box .one {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1; }
+      .services-box .two {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1; }
+      .services-box .three {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1; }
+      .services-box .four {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2; }
+      .services-box .five {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2; }
+      .services-box .six {
+        -ms-grid-column: 3;
+        -ms-grid-row: 2; } }
+  .services-box .services-item {
+    border: 1px solid #ddd;
+    padding: 3rem 2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .services-box .services-item h3 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 35px;
+      text-transform: uppercase; }
+    .services-box .services-item p {
+      text-align: justify; }
+    .services-box .services-item i {
+      font-size: 35px; }
+    .services-box .services-item:hover {
+      background: rgba(199, 236, 238, 0.3);
+      cursor: pointer; }
+
+.motto-panel {
+  overflow: hidden;
+  background: rgba(199, 236, 238, 0.4);
+  margin: 20px auto;
+  padding: 70px; }
+  .motto-panel .motto-text {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 300px;
+    text-transform: uppercase;
+    letter-spacing: .3em; }

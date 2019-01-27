@@ -1,0 +1,124 @@
+#services
+  padding-top: 70px
+  padding-bottom: 70px
+  border-top: 1px solid #ddd
+  @media(min-width:1024px)
+    margin-left: 230px
+  @media(min-width:1200px)
+    margin-left: 320px
+  .services-wrapper
+    margin: 0 auto
+    display: block
+    text-align: center
+    display: flex
+    flex-direction: column
+    h2
+      font-size: 50px
+      font-weight: 300
+      margin: 55px 0
+      display: inline-block
+      text-transform: uppercase
+      margin: 0 auto
+    p
+      font-size: 15px
+      line-height: 30px
+
+
+.services-box
+  display: -ms-grid
+  display: grid
+  -ms-grid-columns: 1fr 1fr 1fr 1fr
+  grid-template-columns: repeat(1, auto)
+  .one
+    -ms-grid-column: 1
+    -ms-grid-row: 1
+  .two
+    -ms-grid-column: 1
+    -ms-grid-row: 1
+  .three
+    -ms-grid-column: 1
+    -ms-grid-row: 1
+  .four
+    -ms-grid-column: 1
+    -ms-grid-row: 1
+  .five
+    -ms-grid-column: 1
+    -ms-grid-row: 1
+  .six
+    -ms-grid-column: 1
+    -ms-grid-row: 1
+  @media (min-width: 768px)
+    -ms-grid-columns: 1fr 1fr
+    grid-template-columns: repeat(2, auto)
+    .one
+      -ms-grid-column: 1
+      -ms-grid-row: 1
+    .two
+      -ms-grid-column: 2
+      -ms-grid-row: 1
+    .three
+      -ms-grid-column: 1
+      -ms-grid-row: 2
+    .four
+      -ms-grid-column: 2
+      -ms-grid-row: 2
+    .five
+      -ms-grid-column: 1
+      -ms-grid-row: 3
+    .six
+      -ms-grid-column: 2
+      -ms-grid-row: 3
+  @media (min-width: 1400px)
+    -ms-grid-columns: 1fr
+    grid-template-columns: repeat(3, auto)
+    .one
+      -ms-grid-column: 1
+      -ms-grid-row: 1
+    .two
+      -ms-grid-column: 2
+      -ms-grid-row: 1
+    .three
+      -ms-grid-column: 3
+      -ms-grid-row: 1
+    .four
+      -ms-grid-column: 1
+      -ms-grid-row: 2
+    .five
+      -ms-grid-column: 2
+      -ms-grid-row: 2
+    .six
+      -ms-grid-column: 3
+      -ms-grid-row: 2
+  .services-item
+    border: 1px solid #ddd
+    padding: 3rem 2rem
+    margin: 1rem
+    display: flex
+    align-items: center
+    flex-direction: column
+    h3
+      font-family: "Open Sans", sans-serif
+      font-weight: 300
+      font-size: 35px
+      text-transform: uppercase
+    p 
+      text-align: justify
+    i 
+      font-size: 35px
+    &:hover 
+      background: rgba($selectionColor, .3)
+      cursor: pointer
+
+.motto-panel
+  overflow: hidden
+  background: rgba($selectionColor, .4)
+  margin: 20px auto
+  padding: 70px
+  .motto-text
+    font-size: 16px
+    display: flex
+    justify-content: center
+    align-content: center
+    margin-left: 300px
+    text-transform: uppercase
+    letter-spacing: .3em
