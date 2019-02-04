@@ -553,7 +553,7 @@ hr {
     @media (min-width: 1024px) {
       #about .about-wrapper .about-desc {
         flex-grow: 3;
-        padding: 20px;
+        padding: 20px 120px;
         margin: 10px 0px 0px; } }
     #about .about-wrapper .about-desc h2 {
       font-weight: 300; }
@@ -591,6 +591,7 @@ hr {
       line-height: 30px; }
 
 .services-box {
+  padding-top: 60px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -659,11 +660,15 @@ hr {
         -ms-grid-row: 2; } }
   .services-box .services-item {
     border: 1px solid #ddd;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     margin: 1rem;
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative; }
+    @media (max-width: 1024px) {
+      .services-box .services-item {
+        padding: 1rem; } }
     .services-box .services-item h3 {
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
@@ -672,16 +677,26 @@ hr {
     .services-box .services-item p {
       text-align: justify; }
     .services-box .services-item i {
-      font-size: 35px; }
+      position: absolute;
+      background: #ffffff;
+      padding: 15px;
+      top: -8%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 30px;
+      border: 1px solid #ddd;
+      border-radius: 50%; }
     .services-box .services-item:hover {
-      background: rgba(199, 236, 238, 0.3);
-      cursor: pointer; }
+      background: rgba(199, 236, 238, 0.3); }
 
 .motto-panel {
   overflow: hidden;
   background: rgba(199, 236, 238, 0.4);
   margin: 20px auto;
   padding: 70px; }
+  @media (max-width: 1024px) {
+    .motto-panel {
+      padding: 40px 20px; } }
   .motto-panel .motto-text {
     font-size: 16px;
     display: flex;
@@ -690,3 +705,6 @@ hr {
     margin-left: 300px;
     text-transform: uppercase;
     letter-spacing: .3em; }
+    @media (max-width: 1024px) {
+      .motto-panel .motto-text {
+        margin-left: 0; } }

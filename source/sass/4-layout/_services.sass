@@ -25,6 +25,7 @@
 
 
 .services-box
+  padding-top: 60px
   display: -ms-grid
   display: grid
   -ms-grid-columns: 1fr 1fr 1fr 1fr
@@ -91,11 +92,14 @@
       -ms-grid-row: 2
   .services-item
     border: 1px solid #ddd
-    padding: 3rem 2rem
+    padding: 2rem 2rem
     margin: 1rem
     display: flex
     align-items: center
     flex-direction: column
+    position: relative
+    @media(max-width:1024px)
+      padding: 1rem
     h3
       font-family: "Open Sans", sans-serif
       font-weight: 300
@@ -104,16 +108,25 @@
     p 
       text-align: justify
     i 
-      font-size: 35px
-    &:hover 
+      position: absolute
+      background: #ffffff
+      padding: 15px
+      top: -8%
+      left: 50%
+      transform: translateX(-50%)
+      font-size: 30px
+      border: 1px solid #ddd
+      border-radius: 50%
+    &:hover
       background: rgba($selectionColor, .3)
-      cursor: pointer
 
 .motto-panel
   overflow: hidden
   background: rgba($selectionColor, .4)
   margin: 20px auto
   padding: 70px
+  @media(max-width:1024px)
+    padding: 40px 20px
   .motto-text
     font-size: 16px
     display: flex
@@ -122,3 +135,5 @@
     margin-left: 300px
     text-transform: uppercase
     letter-spacing: .3em
+    @media(max-width:1024px)
+      margin-left: 0
