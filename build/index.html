@@ -24,15 +24,16 @@
             </div>
             <div class="overlay">
                 <div class="overlayContent">
-                    <a href="#">O nas</a>
-                    <a href="#">Oferta</a>
-                    <a href="#">Realizacje</a>
-                    <a href="#">Kontakt</a>
+                    <a href="#home" class="home overlay-active">Home</a>
+                    <a href="#about" class="about">O nas</a>
+                    <a href="#services" class="services">Oferta</a>
+                    <a href="#gallery" class="gallery">Realizacje</a>
+                    <a href="#contact" class="contact">Kontakt</a>
                 </div>
             </div>
         </section>
     </nav>
-    <header>
+    <header id="home">
         <div class="wrapper">
             <section class="hero">
                 <h1 data-aos="fade-left"><span class="kubus">Kubuś</span> Remontuje</h1>
@@ -57,11 +58,7 @@
                     ogromnym
                     profesjonalizmem w niewielkim czasie. Zapraszamy do kontaktu z nami – gwarantujemy zadowolenie.
                     Możemy podjąć się współpracy w zakresie doradztwa i projektowania oraz realizacji Państwa
-                    inwestycji. Ciężko pracujemy, by móc oferować naszym klientom wysoką jakość w przystępnych cenach.
-                    Jest to możliwe dzięki optymalizacji całego łańcucha wartości, budowanie długotrwałych relacji z
-                    dostawcami, inwestowaniu w zautomatyzowaną produkcję oraz produkowanie dużych wolumenów. Nasza
-                    wizja to coś więcej niż wyposażenie domu. Chcemy polepszać jakość codziennego życia wszystkich
-                    ludzi, na których nasza firma ma wpływ.
+                    inwestycji.
                 </p>
             </div>
         </div>
@@ -139,7 +136,7 @@
         <div class="motto-text">Stawiamy na jakość wykonania i zadowolenie klienta!</div>
     </div>
 
-    <section class="gallery">
+    <section id="gallery">
         <div class="gallery-wrapper">
             <div class="projects" data-aos="fade-up">
                 <a href="./assets/img/project1.jpg" data-lightbox="image1"><img src="./assets/img/thumb_project1.jpg"
@@ -174,11 +171,26 @@
         <div class="gallery-text">Kliknij i zobacz więcej naszych realizacji!</div>
     </div>
 
+    <div class="contact-panel" data-aos="fade-up">
+        <div class="contact-text">Szukasz profesjonalnej ekipy?</div>
+        <div class="contact-text">Zadzwoń <span>+48 554 333 222</span></div>
+    </div>
 
+    <footer id="contact">
+        <div class="footer-wrapper">
+            <div class="social">
+                <div class="icon"><a href=""><i class="fab fa-facebook"></i></a></div>
+                <div class="icon"><a href=""><i class="fab fa-instagram"></i></a></div>
+                <div class="icon"><a href=""><i class="fab fa-twitter-square"></i></a></div>
+            </div>
 
+            <div class="author"><a href="">pawelturkot.pl 2019</a></div>
+            <div class="copyright">Wszelkie prawa zastrzeżone</div>
+        </div>
+    </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/js/vendors.js"></script>
     <script src="./assets/gallery/js/lightbox.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
