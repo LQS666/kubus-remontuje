@@ -698,6 +698,7 @@ hr {
     .motto-panel {
       padding: 40px 20px; } }
   .motto-panel .motto-text {
+    text-align: center;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -707,4 +708,49 @@ hr {
     letter-spacing: .3em; }
     @media (max-width: 1024px) {
       .motto-panel .motto-text {
+        margin-left: 0; } }
+
+@media (min-width: 1024px) {
+  .gallery {
+    margin-left: 230px;
+    margin-right: 20px; } }
+
+@media (min-width: 1200px) {
+  .gallery {
+    margin-left: 320px;
+    margin-right: 20px; } }
+
+.gallery .projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, auto); }
+  @media (min-width: 768px) {
+    .gallery .projects {
+      grid-template-columns: repeat(2, auto); } }
+  @media (min-width: 1400px) {
+    .gallery .projects {
+      grid-template-columns: repeat(3, auto); } }
+  .gallery .projects img {
+    width: 100%; }
+
+.gallery-panel {
+  overflow: hidden;
+  background: rgba(189, 195, 199, 0.4);
+  margin: 20px auto;
+  padding: 70px;
+  cursor: pointer; }
+  @media (max-width: 1024px) {
+    .gallery-panel {
+      padding: 40px 20px; } }
+  .gallery-panel .gallery-text {
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 300px;
+    text-transform: uppercase;
+    letter-spacing: .3em; }
+    @media (max-width: 1024px) {
+      .gallery-panel .gallery-text {
         margin-left: 0; } }

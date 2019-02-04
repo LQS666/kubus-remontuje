@@ -1,0 +1,39 @@
+.gallery
+    @media(min-width:1024px)
+        margin-left: 230px
+        margin-right: 20px
+    @media(min-width:1200px)
+        margin-left: 320px
+        margin-right: 20px
+    .projects
+        display: grid
+        grid-gap: 20px
+        grid-template-columns: repeat(1, auto)
+        @media (min-width: 768px)
+            grid-template-columns: repeat(2, auto)
+        @media (min-width: 1400px)
+            grid-template-columns: repeat(3, auto)
+        img 
+            width: 100%
+
+
+
+.gallery-panel
+    overflow: hidden
+    background: rgba(#bdc3c7, .4)
+    margin: 20px auto
+    padding: 70px
+    cursor: pointer
+    @media(max-width:1024px)
+        padding: 40px 20px
+    .gallery-text
+        text-align: center
+        font-size: 16px
+        display: flex
+        justify-content: center
+        align-content: center
+        margin-left: 300px
+        text-transform: uppercase
+        letter-spacing: .3em
+        @media(max-width:1024px)
+            margin-left: 0
